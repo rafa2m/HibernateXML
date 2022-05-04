@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="ejemplo.hibernate.xml.User" table="User">
+  <id name="id" type="int">
+   <column name="ID"/>
+   <generator class="assigned"/>
+  </id>
+  <property generated="never" lazy="false" name="userMessage" type="java.lang.String">
+   <column name="USERMESSAGE"/>
+  </property>
+  <property generated="never" lazy="false" name="userName" type="java.lang.String">
+   <column name="USERNAME"/>
+  </property>
+ </class>
+</hibernate-mapping>
